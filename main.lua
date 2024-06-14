@@ -352,32 +352,6 @@ function liquidbounce:CreateNotification(title, description, time, icon, color)
 
 end
 
-local ui = liquidbounce.new()
-
-local category1 = ui:CreateCategory("Misc", "http://www.roblox.com/asset/?id=6026568227")
-
-local antibot = ui:CreateModule(category1, "antibot", function(v)
-    print(v)
-    local notif1 = ui:CreateNotification("skibidi", "please help me I am going insane fadsadfs ;ljadfs jl;kadfs jkl;adfs l;jkaf dsljk;adfs jkl;adfs jkl;adfs j som e more text to make it longer...", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
-end)
-
-local toggle1 = ui:CreateToggle(antibot, "Hitbox", function(v)
-    print(v)
-end)
-local toggle2 = ui:CreateToggle(antibot, "Rainbow", function(v)
-    print(v)
-end)
-
-local slider1 = ui:CreateSlider(antibot, "Slider 1", 0, 100, 50, function(value)
-    print("Slider 1 value:", value)
-end)
-local slider2 = ui:CreateSlider(antibot, "Slider 2", 0, 10, 5, function(value)
-    print("Slider 2 value:", value)
-end)
-
-local dropdown1 = ui:CreateDropdown(antibot, "Choose Option", {"Option 1", "Option 2", "Option 3", "Option 4"}, function(selectedOption)
-    print("Selected Option:", selectedOption)
-end)
-
 return liquidbounce
+
 
