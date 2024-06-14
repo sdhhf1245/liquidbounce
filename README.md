@@ -52,4 +52,4 @@ ui:CreateDropdown(module, title, options (inside a table), callback)
  ui:CreateNotification(title, description, time, icon, imagecolor)
  ```
 
-# by sdhhf
+# by sdhhf (also by the way, there are different types of the ui, one of them uses 0 images for some games that detect images.
