@@ -2,7 +2,7 @@
 a roblox ui library for the popular hacked client, liquidbounce
 
 ![example image of the liquidbounce ui library](https://raw.githubusercontent.com/sdhhf1245/liquidbounce/main/example.png)
-
+an image of using the non detected version of this ui library
 
 # documentation
 ## create the ui
