@@ -4,6 +4,8 @@ a roblox ui library for the popular hacked client, liquidbounce
 # documentation
 ## create the ui
 ```lua
+local liquidbounce = loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhhf1245/liquidbounce/main/noimages.lua", true))()
+
 local ui = liquidbounce.new()
 ```
 
