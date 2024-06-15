@@ -56,6 +56,7 @@ end)
  local notif1 = ui:CreateNotification("hi", "cool!", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
  -- ui:CreateNotification(title, description, time, icon, imagecolor)
 ```
+![example image of a notification](https://raw.githubusercontent.com/sdhhf1245/liquidbounce/main/notification.png)
 
 ## the full script
 ```lua
