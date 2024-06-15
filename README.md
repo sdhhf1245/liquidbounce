@@ -84,4 +84,4 @@ local dropdown1 = ui:CreateDropdown(antibot, "Choose Option", {"Option 1", "Opti
 end)
 ```
 
-# by sdhhf (also by the way, there are different types of the ui, one of them uses 0 images for some games that detect images.)
+# by sdhhf
