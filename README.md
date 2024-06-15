@@ -12,7 +12,7 @@ local ui = liquidbounce.new()
 ## making a category
 ```lua
 local category1 = ui:CreateCategory("Misc", "http://www.roblox.com/asset/?id=6026568227")
-ui:CreateCategory(title, icon)
+-- ui:CreateCategory(title, icon)
 ```
 
 ## making a module
@@ -20,7 +20,7 @@ ui:CreateCategory(title, icon)
 local antibot = ui:CreateModule(category1, "antibot", function(v)
     print(v)
 end)
-ui:CreateModule(category, text, callback)
+-- ui:CreateModule(category, text, callback)
 ```
 
 # making settings inside a module
@@ -29,7 +29,7 @@ ui:CreateModule(category, text, callback)
 local toggle1 = ui:CreateToggle(antibot, "Hitbox", function(v)
     print(v)
 end)
-ui:CreateToggle(module, title, callback)
+-- ui:CreateToggle(module, title, callback)
 ```
 
 ## making a slider
@@ -37,7 +37,7 @@ ui:CreateToggle(module, title, callback)
 local slider1 = ui:CreateSlider(antibot, "Slider 1", 0, 100, 50, function(value)
     print(value)
 end)
-ui:CreateSlider(module, title, min, max, default, callback)
+-- ui:CreateSlider(module, title, min, max, default, callback)
 ```
 
 ## making a dropdown
@@ -45,13 +45,39 @@ ui:CreateSlider(module, title, min, max, default, callback)
 local dropdown1 = ui:CreateDropdown(antibot, "Choose Option", {"Option 1", "Option 2", "Option 3", "Option 4"}, function(v)
     print(v)
 end)
-ui:CreateDropdown(module, title, options (inside a table), callback)
+-- ui:CreateDropdown(module, title, options (inside a table), callback)
 ```
 
 ## making a notification
 ```lua
  local notif1 = ui:CreateNotification("hi", "cool!", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
- ui:CreateNotification(title, description, time, icon, imagecolor)
- ```
+ -- ui:CreateNotification(title, description, time, icon, imagecolor)
+```
+
+## full script
+```lua
+local liquidbounce = loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhhf1245/liquidbounce/main/noimages.lua", true))()
+
+local ui = liquidbounce.new()
+
+local category1 = ui:CreateCategory("Misc", "http://www.roblox.com/asset/?id=6026568227")
+
+local antibot = ui:CreateModule(category1, "antibot", function(v)
+    print(v)
+    local notif1 = ui:CreateNotification("skibidi", "please help me I am going insane fadsadfs ;ljadfs jl;kadfs jkl;adfs l;jkaf dsljk;adfs jkl;adfs jkl;adfs j som e more text to make it longer...", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
+end)
+
+local toggle1 = ui:CreateToggle(antibot, "Hitbox", function(v)
+    print(v)
+end)
+
+local slider1 = ui:CreateSlider(antibot, "Slider 1", 0, 100, 50, function(value)
+    print(value)
+end)
+
+local dropdown1 = ui:CreateDropdown(antibot, "Choose Option", {"Option 1", "Option 2", "Option 3", "Option 4"}, function(v)
+    print(v)
+end)
+```
 
 # by sdhhf (also by the way, there are different types of the ui, one of them uses 0 images for some games that detect images.
