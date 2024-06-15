@@ -53,8 +53,8 @@ end)
 
 ## create a notification
 ```lua
- local notif1 = ui:CreateNotification("hi", "cool!", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
- -- ui:CreateNotification(title, description, time, icon, imagecolor)
+local notif1 = ui:CreateNotification("hi", "cool!", 2, "http://www.roblox.com/asset/?id=6031068421", Color3.fromRGB(77, 172, 104))
+-- ui:CreateNotification(title, description, time, icon, imagecolor)
 ```
 ![example image of a notification](https://raw.githubusercontent.com/sdhhf1245/liquidbounce/main/notification.png)
 
@@ -68,7 +68,7 @@ local category1 = ui:CreateCategory("Misc", "http://www.roblox.com/asset/?id=602
 
 local antibot = ui:CreateModule(category1, "antibot", function(v)
     print(v)
-    local notif1 = ui:CreateNotification("skibidi", "please help me I am going insane fadsadfs ;ljadfs jl;kadfs jkl;adfs l;jkaf dsljk;adfs jkl;adfs jkl;adfs j som e more text to make it longer...", 2, "http://www.roblox.com/asset/?id=6031068421", colors.Green)
+    local notif1 = ui:CreateNotification("hi", "cool!", 2, "http://www.roblox.com/asset/?id=6031068421", Color3.fromRGB(77, 172, 104))
 end)
 
 local toggle1 = ui:CreateToggle(antibot, "Hitbox", function(v)
