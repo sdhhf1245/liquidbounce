@@ -438,6 +438,7 @@ function liquidbounce:CreateNotification(title, description, time, icon, color)
     -- notif.ImageLabel.ImageTransparency = 1
 
     notif.Title.Text = title or "Notification"
+    notif.Title.Size = UDim2.new(0, 285, 0, 46)
     notif.Description.Text = description or "..."
     notif.Description.Size = UDim2.new(0, 285, 0, 37)
     local ti = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.InOut)
@@ -458,5 +459,3 @@ function liquidbounce:CreateNotification(title, description, time, icon, color)
 end
 
 return liquidbounce
-
-local ui = liquidbounce.new()
