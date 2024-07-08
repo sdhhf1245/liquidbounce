@@ -398,7 +398,7 @@ function liquidbounce:CreateDropdown(module, title, options, callback)
         selection.Parent = dropdownFrame
 
         selection.MouseButton1Click:Connect(function()
-            dropdown.Text = "MagnetType · " .. v
+            dropdown.Text = v
             dropdownFrame.Visible = false
             arrow.Rotation = 0
             if callback then
